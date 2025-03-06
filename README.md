@@ -1,4 +1,4 @@
-# OracleNet: Oracle Bone Script Recognition
+# OracleNet: Enhancing Oracle Bone Script Recognition with Adaptive Deformation and Texture-Structure Decoupling
 
 This project implements the model proposed in the paper "OracleNet: Enhancing Oracle Bone Script Recognition with Adaptive Deformation and Texture-Structure Decoupling". OracleNet improves the accuracy of oracle bone script character recognition through adaptive deformation, texture-structure decoupling, and multi-level structured perceptual attention mechanisms.
 
