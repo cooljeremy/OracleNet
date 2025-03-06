@@ -1,0 +1,43 @@
+
+seed: 42
+device: 'cuda'  
+
+
+data:
+  root: './data'
+  image_size: 224
+  batch_size: 64
+  num_workers: 4
+
+
+model:
+  num_classes: 241
+  hidden_dim: 256
+  num_control_points: 19
+  displacement: 17
+
+
+adm:
+  alpha1: 0.53  # edge magnitude coefficient
+  alpha2: 0.62  # edge direction coefficient
+  beta1: 0.74   # local contrast coefficient
+  beta2: 0.43   # noise suppression coefficient
+
+
+training:
+  learning_rate: 0.001
+  weight_decay: 0.0001
+  num_epochs: 90
+  lr_step_size: 10000
+  lr_gamma: 0.1
+
+
+loss:
+  lambda1: 0.48  # structure loss weight
+  lambda2: 0.47  # texture loss weight
+  lambda3: 0.54  # gap loss weight
+  lambda4: 0.52  # category loss weight
+
+
+visualization:
+  save_dir: 'visualizations'
